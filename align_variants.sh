@@ -11,7 +11,7 @@ fastabase=$( basename $fastafile )
 fastabaseid=${fastabase%.*}
 filteredfastqfile=$( basename $fastqfile )
 filteredfastqfilename=${filteredfastqfile%.*}_filtered.fastq
-python ./toolkit/fastqfilter.py -fastqinput $fastqfile -outputid $filteredfastqfilename
+python ./toolkit/fastq_filter.py -fastqinput $fastqfile -outputid $filteredfastqfilename
 samoutfile=$( basename $filteredfastqfile )
 samoutfilename=${samoutfile%.*}.sam
 bowtie2-build $fastafile $fastabaseid
