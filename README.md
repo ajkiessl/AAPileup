@@ -1,5 +1,4 @@
 # AAPileup
-Contributors: Alex Kiessling, Benjamin Allen
 
 Bioinformatics tool for taking next-generation sequencing or Sanger sequencing outputs and converting them to amino acid pileup.
 ngs_sim.py can simulate next-generation sequencing outputs from a Sanger output.
